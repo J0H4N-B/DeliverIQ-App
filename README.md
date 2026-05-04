@@ -1,4 +1,4 @@
-# 📦 Clasificador de Calidad de Entregas
+# 📦 DeliverIQ — Clasificador de Calidad de Entregas
 
 Aplicación web de Machine Learning que entrena un modelo de clasificación
 sobre cualquier CSV de entregas y predice si una entrega será **Exitosa**,
