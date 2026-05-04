@@ -81,7 +81,15 @@ proyecto4_clasificador/
 
 ## ➕ Agregar un nuevo modelo
 
-Edita `app/utils/ml_engine.py` y añade una entrada en `AVAILABLE_MODELS`:
+Los modelos de entrenamiento se registran en el diccionario `AVAILABLE_MODELS`
+dentro del archivo **`./app/utils/ml_engine.py`**.  
+Para agregar un nuevo clasificador:
+
+1. Abre `./app/utils/ml_engine.py`
+2. Añade una entrada en `AVAILABLE_MODELS` con tu clasificador
+3. Reinicia la app
+
+Ejemplo:
 
 ```python
 "xgboost": {
@@ -89,6 +97,17 @@ Edita `app/utils/ml_engine.py` y añade una entrada en `AVAILABLE_MODELS`:
     "description": "Extreme Gradient Boosting. Muy rápido y preciso.",
     "class": XGBClassifier,  # importa primero
     "params": {"n_estimators": 100, "max_depth": 5, "random_state": 42},
+}
+```
+
+Otro ejemplo con SVM:
+
+```python
+"svm": {
+    "label": "SVM",
+    "description": "Máquinas de soporte vectorial.",
+    "class": SVC,
+    "params": {"kernel": "rbf", "C": 1.0, "random_state": 42},
 }
 ```
 
