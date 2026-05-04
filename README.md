@@ -43,7 +43,6 @@ proyecto4_clasificador/
 │   ├── samples/
 │   │   └── entregas_ejemplo.csv
 │   ├── uploads/
-│   └── models/               ← modelos entrenados (.joblib)
 ├── app/
 │   ├── __init__.py
 │   ├── blueprints/
